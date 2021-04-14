@@ -7,12 +7,12 @@ module GbsApi
         def call(params)
           new(:'LOC.GetLockers', params).call
         end
+      end
 
-        private
+      private
 
-        def requires_authorization?
-          true
-        end
+      def requires_authorization?
+        true
       end
     end
   end
